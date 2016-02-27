@@ -1,0 +1,177 @@
+body {
+	margin: 0;
+	overflow: hidden;
+}
+
+#background {
+	width: 100vw;
+	height: 100vh;
+	background-image: url(pictures/background.png);
+	background-size: cover;
+	animation: slide 10s linear infinite;
+}
+
+@-moz-keyframes slide {
+	from {
+		background-position: 100vw;
+	}
+	to {
+		background-position: 0;
+	}
+}
+
+@-webkit-keyframes slide {
+	from {
+		background-position: 100vw;
+	}
+	to {
+		background-position: 0;
+	}
+}
+
+#menu{
+	position: absolute;
+	top:0;
+	left:0;
+	z-index: 100;
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	flex-direction:column;
+	justify-content: space-around;
+	font-family: 'Press Start 2P', cursive;
+}
+
+.score{
+	font-size: 20px;
+	font-family: 'M04_FATAL FURY', cursive;
+	text-align: center;
+	text-shadow: white 1px 1px 0, white -1px -1px 0,
+	white -1px 1px 0, white 1px -1px 0;
+}
+
+.game-status{
+	font-family: 'Mario Kart DS', cursive;
+	font-size: 60px;
+	text-shadow: white 2px 2px 0, white -2px -2px 0,
+	white -2px 2px 0, white 2px -2px 0;
+}
+
+.button{
+	font-size: 18px;
+	width: 100px;
+	height: 50px;
+	font-family: 'M04_FATAL FURY', cursive;
+	background: url(pictures/button.png) no-repeat ;
+	background-size: contain;
+	text-align: center;
+	padding-top: 15px;
+	cursor: pointer;
+}
+
+.button.again{
+	width: 180px;
+	height: 50px;
+	background-size: 180px 50px;
+	padding-top: 15px;
+	padding-right: 25px;
+}
+
+#bird {
+	position: absolute;
+	background-image: url(pictures/bird.png);
+	background-size: cover;
+	width: 50px;
+	height: 50px;
+	right: 60%;
+	bottom: 50%;
+	overflow: hidden;
+}
+
+.block.one{
+	position: absolute;
+	width: 100px;
+	height: 100vh;
+	right: 0;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.block.one .down {
+	position: absolute;
+	background-image: url(pictures/pipe.png);
+	background-size: 100px auto;
+	height: 400px;
+	width: 100px;
+	right: 0;
+	bottom: -290px;
+}
+
+.block.one .top {
+	position: absolute;
+	background-image: url(pictures/pipe_down.png);
+	background-size: 100px 200px;
+	height: 400px;
+	width: 100px;
+	right: 0;
+	bottom: 283px;
+}
+
+.block.two{
+	position: absolute;
+	width: 100px;
+	height: 100vh;
+	right: -500px;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.block.two .down{
+	position: absolute;
+	background-image: url(pictures/pipe.png);
+	background-size: 100px auto;
+	height: 400px;
+	width: 100px;
+	right: 0;
+	bottom: -50px;
+}
+
+.block.two .top{
+	position: absolute;
+	background-image: url(pictures/pipe_down.png);
+	background-size: 100px 200px;
+	height: 400px;
+	width: 100px;
+	right: 0;
+	bottom: 523px;
+}
+
+.block.three{
+	position: absolute;
+	width: 100px;
+	height: 100vh;
+	right: -1000px;
+	bottom: 0;
+	overflow: hidden;
+}
+
+.block.three .down{
+	position: absolute;
+	background-image: url(pictures/pipe.png);
+	background-size: 100px auto;
+	height: 400px;
+	width: 100px;
+	right: 0;
+	bottom: -290px;
+}
+
+.block.three .top{
+	position: absolute;
+	background-image: url(pictures/pipe_down.png);
+	background-size: 100px 200px;
+	height: 400px;
+	width: 100px;
+	right: 0;
+	bottom: 283px;
+}
